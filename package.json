@@ -1,0 +1,31 @@
+{
+    "name": "selenium-scaling-demo",
+    "version": "0.0.1",
+    "description": "Selenium Scaling Demo",
+    "main": "index.js",
+    "scripts": {
+      "test": "nightwatch",
+      "remote100": "nightwatch --env zalenium",
+      "remote-single": "nightwatch --env zalenium --filter google-search01*",
+      "local-single": "nightwatch --filter google-search01*",
+      "local10-serial": "nightwatch --env serial --filter google-search0*",
+      "local10" : "nightwatch --filter google-search0*",
+      "remote10" : "nightwatch --env zalenium --filter google-search0*"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/unlikelyzero/scaling-selenium-demo.git"
+    },
+    "author": "unlikelyzero",
+    "homepage": "https://github.com/unlikelyzero/scaling-selenium-demo#readme",
+    "dependencies": {
+      "nightwatch": "^0.9.19"
+    },
+    "devDependencies": {
+        "chromedriver": "^2.46.0"
+    },
+    "keywords": [
+      "nightwatch",
+      "testing"
+    ]
+  }
