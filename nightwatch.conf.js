@@ -1,3 +1,8 @@
+const {
+  EXTERNAL_SELENIUM_HOST,
+  EXTERNAL_SELENIUM_PORT
+} = require('./settings.js');
+
 module.exports = {
   "src_folders" : ["tests"],
   "output_folder" : "reports",
@@ -5,7 +10,7 @@ module.exports = {
   "test_settings" : {
     "default" : {
       "selenium" : {
-        "start_process" : true,
+        "start_process" : false,
         "server_path" : "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.4.0.jar",
         "log_path" : "logs",
         "host" : "127.0.0.1",
@@ -33,9 +38,9 @@ module.exports = {
     },
     "zalenium" : {
       "test_workers": { "enabled": true, "workers": 100 },
-      "selenium_host" : "externalhost",
-      "selenium_port" : 4444,
+      "selenium_host" : EXTERNAL_SELENIUM_HOST,
+      "selenium_port" : EXTERNAL_SELENIUM_PORT,
       "default_path_prefix" : '/wd/hub'
     }
   }
-}
+};
