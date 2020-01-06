@@ -1,5 +1,5 @@
-const EXTERNAL_SELENIUM_HOST = process.env.EXTERNAL_SELENIUM_HOST || "localhost";
-const EXTERNAL_SELENIUM_PORT = process.env.EXTERNAL_SELENIUM_PORT || 4444;
+const EXTERNAL_SELENIUM_HOST = process.env.EXTERNAL_SELENIUM_HOST || "<here>";
+const EXTERNAL_SELENIUM_PORT = process.env.EXTERNAL_SELENIUM_PORT || 80;
 
 module.exports = {
     EXTERNAL_SELENIUM_HOST,
