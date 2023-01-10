@@ -23,7 +23,7 @@
   "author": "unlikelyzero",
   "homepage": "https://github.com/unlikelyzero/scaling-selenium-demo#readme",
   "dependencies": {
-    "nightwatch": "0.9.20"
+    "nightwatch": "2.6.9"
   },
   "devDependencies": {
     "chromedriver": "78.0.1",
